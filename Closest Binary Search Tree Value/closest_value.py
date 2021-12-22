@@ -15,7 +15,6 @@ def print_elem(root):
 
 class Solution(object):
     
-    
     def closestValue(self, root, target):
         """
         :type root: TreeNode
@@ -23,7 +22,9 @@ class Solution(object):
         :rtype: int
         """
         elements = print_elem(root)
+
         curr = elements[0]
+        
         for val in elements:
             if abs(target - val) < abs (target - curr):
                 curr = val
